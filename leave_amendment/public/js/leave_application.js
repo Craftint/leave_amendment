@@ -13,7 +13,7 @@ frappe.ui.form.on('Leave Application', {
 		                }
     		          ],
     		          size: 'large',
-    		          primary_action_label: 'Cancel Attendance',
+    		          primary_action_label: 'Amend',
     		          primary_action(values) {
 		          		if(values.from_date < frm.doc.from_date){
                             	frappe.throw("Early joining date can not be before leave application date")
